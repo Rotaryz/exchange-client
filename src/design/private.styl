@@ -1,0 +1,27 @@
+@import "./variable.styl"
+/**
+ *  私有颜色变量
+ */
+$font-size-15 = 15px
+/*
+  团长私有颜色
+ */
+
+$color-white = #ffffff
+
+$image-color = #F5F6FA
+//$image-color = rgba(0, 0, 0, 0)
+
+button-style($type = normal, $radius = 6px, $scene = active)
+  background: $color-money
+  border-radius: $radius
+  text-align: center
+
+  if ($scene == goods)
+    background: $color-main
+  if ($type == click)
+    background-image: linear-gradient(90deg, $color-CB5F43 0%, $color-BD2222 100%)
+  else if ($type == un-click )
+    opacity: 0.6
+
+

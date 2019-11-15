@@ -1,0 +1,65 @@
+.fade-modal-enter-active
+  opacity: 1
+  transition: all 5s
+
+.fade-modal-enter, .fade-modal-leave-to
+  opacity: 0
+  transition: all 5s
+
+
+.scale-modal-enter-active
+  transform: scale(1)
+
+.scale-modal-enter, .scale-modal-leave-to
+  transform: scale(.5)
+  transition: all 5s
+
+.default-modal-wrap
+  position: fixed
+  background: rgba(36, 41, 59, 0.5)
+  bottom: 0
+  left: 0
+  top:0
+  width: 100vw
+  height: 100vh
+  z-index: 1500
+  layout()
+  justify-content: center
+  align-items: center
+  transition: opacity 0.3s
+  &.hide-modal
+    opacity 0
+    transform scale(0)
+  .content-wrap
+    background-color $color-white
+    width: px-change-vw(280)
+    border-radius 2px
+    transition: all 0.3s
+    &.hide-wrap
+      transform scale(0)
+    .content-head
+      height:55px
+      line-height:55px
+      font-size: $font-size-16
+      font-family $font-family-medium
+      color: #3F454B
+      &.center
+        text-align center
+    .content-body
+      padding:0 40px 14px
+
+    .content-footer
+        display flex
+        .footer-button
+          flex:1
+          height:40px
+          line-height 40px
+          text-align center
+          &.default-button
+            border-top-1px(#EFEEF5)
+          &.default-yellow
+            background-image: linear-gradient(114deg, #F5E5C1 1%, #F2D699 98%)
+          &:last-child
+            border-radius: 0 0 2px 0
+          &:frist-child
+            border-radius: 0 0 0 2px

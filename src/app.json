@@ -1,0 +1,105 @@
+{
+  "pages": [
+    "pages/home",
+    "pages/serve-detail",
+    "pages/shop",
+    "pages/out-html",
+    "pages/exchange-explain",
+    "pages/mine",
+    "pages/page-missing",
+    "pages/goods-exchange",
+    "pages/goods-classify",
+    "pages/company-explain",
+    "pages/pay-success",
+    "pages/submit-order",
+    "pages/goods-detail",
+    "pages/goods-detail-exchange",
+    "pages/shopping-cart"
+  ],
+  "subPackages": [
+    {
+      "root": "package-other/",
+      "pages": [
+        "login",
+        "network-error",
+        "exchange-success"
+      ]
+    },
+    {
+      "root": "package-active/",
+      "pages": [
+        "bargain-detail",
+        "share-list",
+        "bargain-goods-detail",
+        "group-goods-detail",
+        "group-detail",
+        "wheel"
+      ]
+    },
+    {
+      "root": "package-personal/",
+      "pages": [
+        "prize-record",
+        "service-order-detail",
+        "my-bargain",
+        "my-share",
+        "order-refund",
+        "service-order",
+        "logistics-information",
+        "exchange-detail",
+        "my-grant",
+        "my-address",
+        "new-address",
+        "order-detail",
+        "exchange-record",
+        "order-list"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/mine": {
+      "network": "all",
+      "packages": [
+        "package-personal/"
+      ]
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F5F6FA",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#979BA5",
+    "backgroundColor": "#fff",
+    "selectedColor": "#19B6B4",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "商城",
+        "pagePath": "pages/home",
+        "iconPath": "static/tabs/icon-gift.png",
+        "selectedIconPath": "static/tabs/icon-gift_pressed.png"
+      },{
+        "text": "门店",
+        "pagePath": "pages/shop",
+        "iconPath": "static/tabs/icon-shop.png",
+        "selectedIconPath": "static/tabs/icon-shop_pressed.png"
+      },{
+        "text": "购物车",
+        "pagePath": "pages/shopping-cart",
+        "iconPath": "static/tabs/icon-car.png",
+        "selectedIconPath": "static/tabs/icon-car_pressed.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/mine",
+        "iconPath": "static/tabs/icon-mine.png",
+        "selectedIconPath": "static/tabs/icon-mine_pressed.png"
+      }
+    ],
+    "position": "bottom"
+  }
+}
